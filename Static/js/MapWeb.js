@@ -58,7 +58,7 @@ function createMap() {
 
         var div = L.DomUtil.create('div', 'info legend'),
         magLimits = [0, 1, 2, 3, 4, 5],
-        labels = [];
+        labels = ['<strong>Magnitude</strong><br>'];
 
         for (var i = 0; i < magLimits.length; i++) {
             var colors = getColor(magLimits[i] + 0.1) ;
