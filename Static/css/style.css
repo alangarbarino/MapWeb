@@ -1,0 +1,221 @@
+#map,
+body,
+html {
+  height: 400px;
+  Margin-left: 50px;
+  margin-right: 50px;
+}
+
+.container{
+  margin-left: 10px;
+  margin-right: 10px ;
+}
+
+.img-theme{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100px !important;
+  }
+
+.fixed_header{
+  text-align: right ;
+  font-weight: bold ;
+}
+
+.href{
+    color: blue;
+    text-decoration: underline
+}
+
+.fixed_header{
+    width: 470px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 200px;
+}
+
+.fixed_header thead tr {
+  display: block;
+}
+
+.fixed_header thead {
+  background:#4E2A84;
+  color:#fff;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  text-align: left;
+  width: 470px;
+}
+
+.fixed_header th, .fixed_header td {
+    padding: 5px;
+    text-align: left;
+    width: 470px;
+  }
+
+.card-title {
+    background: white ;
+    font-size: 26px ;
+    color:#4E2A84;
+}
+
+.card-title {
+    background: white ;
+    font-size: 26px ;
+    color:#4E2A84;
+}
+
+.demographics_title {
+  padding: 20px;
+}
+
+.container-fluid {
+    border-bottom:10px solid rgb(78, 42, 132);
+}
+
+#myNavbar a:hover {
+    background-color: rgb(131, 110, 170);
+    color: white;
+    transition-duration: 0.4s;
+  }
+
+body {
+    min-height: 200px;
+}
+
+h1{
+    color: #4E2A84;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+h2{
+    color: #4C4A4F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    color: #58565C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    border-top: 2px solid rgba(128, 128, 128, 0.685);
+}
+p{
+    color: #4C4A4F;  
+}
+
+#main-map {
+    height: 900px;
+    width: 800px;
+    position: static;
+    padding: 70px;
+    orientation: auto;
+}
+
+.legend i {
+  width: 10px;
+  height: 10px;
+  color: black;
+  float: left;
+  border: 1px solid black;
+  margin-right: 8px;
+  opacity: 0.8;
+}  
+
+.legend .square2 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: 5px solid black;
+  margin-top: 8px;
+}
+
+.pager a{
+    color:#4C4A4F;
+    transition-duration: 0.3s;
+    color: #4E2A84;
+
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+.legend .square2 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 8px;
+}
+
+.legend .circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 8px;
+}
+
+/* CSS from the Leaflet-Choropleth documentation */
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+}
+
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.legend .max {
+  float: right;
+}
+/* choropleth */
+
+
+
+footer {
+    background-color: #777;
+    color: rgb(230, 230, 230);
+    border: none;
+    position:relative; 
+    left:0px; 
+    bottom:0px; 
+    width:100%;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 10px solid rgb(78, 42, 132);
+}

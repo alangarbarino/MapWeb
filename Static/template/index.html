@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head and MetaData-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Mapping HW</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!--D3.JS-->
+    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
+    <!-- Leaflet css and then js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+
+    <!-- <script type="text/javascript" src="static/python/js/eventHandling.js"></script> -->
+    <script type="text/javascript" src="../js/config.js"></script>
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<!--Body-->
+
+<body>
+
+    <!--Header-->
+    <header>
+        <img class="img-theme" src="../image/banner.png">
+    </header>
+
+   
+    <div class="container">
+            <h1>Earthquake Mapper</h1>
+            <h3>Earthquakes recorded in the last 7 days</h3>
+    </div>
+
+    <!--THE MAP-->
+    <div id="map"></div>
+    <script type="text/javascript" src="../js/MapWeb.js"></script>
+
+
+    <!--Footer & Copyright-->
+    <footer class="page-footer font-small">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> Data Science Bootcamp, Web Mapping Homework
+        </div>
+    </footer>
+
+</body>
+
+</html>
