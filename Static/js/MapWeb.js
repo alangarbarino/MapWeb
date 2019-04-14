@@ -76,14 +76,6 @@ function createMap() {
 
     legend.addTo(map);
 
-    //     // loop through our density intervals and generate a label with a colored square
-    //     for (var i = 0; i < magLimits.length; i++) {
-    //         div.innerHTML += 
-    //             '<i class = "circle" style="background:' + getColor(magLimits[i] + 0.1) + '"></i> ' +
-    //             magLimits[i] + (magLimits[i + 1] ? '&ndash;' + magLimits[i + 1] + '<br>' : '+');
-    // }            
-    
-
     // call update layer function to retrieve and write earthquake data to map
     updateEqLayer();
 };
@@ -93,8 +85,9 @@ function updateEqLayer() {
     console.log("entering updateEqLayer")
 
     // Get earthquake data and log to console
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
     const url = `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson`;
-    d3.json(url, function (eqData) {
+    d3.json(proxyurl + url, function (eqData) {
         var pprint = JSON.stringify(eqData, null, 2); // spacing level = 2
         console.log(pprint);
 
